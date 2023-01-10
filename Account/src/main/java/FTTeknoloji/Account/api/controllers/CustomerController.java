@@ -29,7 +29,7 @@ public class CustomerController {
 	
 	private CustomerService customerService;
 
-	@Autowired
+
 	public CustomerController(CustomerService customerService) {
 		super();
 		this.customerService = customerService;
@@ -70,7 +70,4 @@ public class CustomerController {
 	
 	
 	
-	
-	
-
 }

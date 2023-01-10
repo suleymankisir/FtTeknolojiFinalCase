@@ -1,12 +1,8 @@
 package FTTeknoloji.Account.businness.concretes;
 
-
-
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,19 +23,15 @@ public class CustomerManager implements CustomerService {
 
 	private CustomerDao customerDao;
 	
-
 	@Autowired
 	private RestTemplate restTemplate;
 	
-	
-	@Autowired
+
 	public CustomerManager(CustomerDao customerDao) {
 		super();
 		this.customerDao = customerDao;
 	}
 	
-
-
 	@Override
 	public Customer add(Customer customer) {
 		

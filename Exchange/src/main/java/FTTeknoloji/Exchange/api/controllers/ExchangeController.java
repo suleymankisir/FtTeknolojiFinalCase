@@ -1,9 +1,5 @@
 package FTTeknoloji.Exchange.api.controllers;
 
-
-
-
-
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;

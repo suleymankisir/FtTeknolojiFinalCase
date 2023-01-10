@@ -2,7 +2,7 @@ package FTTeknoloji.Exchange.businness.concretes;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import FTTeknoloji.Exchange.businness.abstracts.ExchangeService;
@@ -13,8 +13,7 @@ import FTTeknoloji.Exchange.entities.concretes.Exchange;
 public class ExchangeManager implements ExchangeService {
 
 	private ExchangeDao exchangeDao;
-	
-	@Autowired
+
 	public ExchangeManager(ExchangeDao exchangeDao) {
 		super();
 		this.exchangeDao = exchangeDao;
@@ -23,7 +22,7 @@ public class ExchangeManager implements ExchangeService {
 
 	@Override
 	public Exchange add(Exchange exchange) {
-		// TODO Auto-generated method stub
+
 		return this.exchangeDao.save(exchange);
 	}
 
@@ -33,7 +32,7 @@ public class ExchangeManager implements ExchangeService {
 
 	@Override
 	public List<Exchange> getAll() {
-		// TODO Auto-generated method stub
+
 		return this.exchangeDao.findAll();
 	}
 
